@@ -1,0 +1,131 @@
+.todo__notodo, .todo__item {
+    position: relative;
+    width: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.todo__notodo {
+    background: linear-gradient(to top left, #1D40FF, #1DF6FD);
+    padding: 29px 0;
+    margin-top: 30px;
+}
+.todo__item {
+    padding: 5px 0;
+    text-align: left;
+    background: linear-gradient(to top left, #1D40FF, #1DF6FD);
+}
+
+.todo__item:first-child {
+    margin-top: 30px;
+}
+
+.todo__item:nth-child(2n) {
+    background: linear-gradient(to top left, #FC3355, #CE5BF6);
+}
+
+.todo__item:nth-child(3n) {
+    background: linear-gradient(to top left, #9830FF, #2740FF);
+}
+
+.todo__item .done {
+    text-decoration: line-through;
+}
+
+.todo__item p {
+    max-width: 400px;
+    line-height: 1.5;
+    padding: 20px 0 20px 50px;
+}
+
+.todo__text {
+    background-color: #1F243A;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.todo__text:focus{
+    box-shadow: 0 0 13px 2px #2740FF;
+}
+
+.todo__text::-webkit-scrollbar {
+    width: 10px;
+}
+   
+.todo__text::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+   
+.todo__text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(0deg, #9830FF, #2740FF);
+}
+
+.todo__button_create {
+    color: white;
+    font-size: 18px;
+    padding: 15px 132px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    background: linear-gradient(-45deg, #9830FF, #FC3355, #9830FF, #2740FF);
+	background-size: 300% 300%;
+}
+
+@keyframes animate_gradient {
+	from { background-position: 0% 25%; }
+	to { background-position: 50% 25%; }
+}
+
+.todo__button_create:hover {
+    animation: animate_gradient 1s ease forwards;
+}
+
+.todo__button_remove {
+    background-color: transparent;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    right: -35px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 30px;
+    line-height: 20px;
+    transition: all 0.15s linear;
+}
+
+.todo__button_remove:hover {
+    color: #FF9B5E;
+}
+
+.form-check-input {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 8px);
+    left: 20px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+
+.form-check-input:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
+.form-check-input:checked {
+    background-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 .25rem transparent;
+}

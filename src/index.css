@@ -1,0 +1,242 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+figure {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  background-color: #16192A;
+  color: white;
+}
+
+.wrapper {
+  padding: 25px 0;
+  text-align: center;
+}
+
+header {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 20px auto 40px auto;
+}
+
+.about__link {
+    margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.15s linear;
+}
+
+a:hover {
+  color: #FF9B5E;
+}
+
+a:focus, a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+img {
+  max-height: 200px;
+}
+
+.btn {
+  min-width: 150px;
+}
+
+.btn-primary {
+    background: linear-gradient(-45deg, #9830FF, #FC3355, #9830FF, #2740FF);
+	background-size: 300% 300%;
+    border: transparent;
+    animation: 1s ease;
+}
+
+.btn-primary:not(.btn-primary--send){
+    margin: 50px;
+}
+
+.btn-primary:hover {
+    animation: animate_gradient 1.5s ease forwards;
+}
+
+.form-control, .form-control:focus {
+    background-color: #1F243A;
+    color: white;
+    border: none;
+    resize: none;
+}
+
+.form-control::-webkit-scrollbar {
+    width: 10px;
+}
+   
+.form-control::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+   
+.form-control::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(0deg, #9830FF, #2740FF);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 13px 2px #2740FF;
+}
+
+@keyframes animate_gradient {
+	from { background-position: 0% 25%; }
+	to { background-position: 50% 25%; }
+}
