@@ -1,3 +1,15 @@
-# A simple app that includes a to-do list, calculator, player, tic-tac-toe game and is built with React.
+# SPA
 
-Still in development
+A simple application that includes:
+
+:zzz: To-Do List
+
+:1234: Calculator
+
+:musical_note: Music Player
+
+:negative_squared_cross_mark: Tic-Tac-Toe
+
+## Note
+
+Still in development Music Player and Tic-Tac-Toe.
