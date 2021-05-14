@@ -108,11 +108,12 @@ header {
 
 h1 {
     font-size: 30px;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 0 auto;
 }
 
 .about__link {
     margin: 20px auto;
+    font-weight: 400;
 }
 
 a {

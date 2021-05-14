@@ -24,8 +24,8 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <About title='A collection of simple projects in React'>
-                    <p className='about__link'>by <a href='https://github.com/citrusonya/' target='_blank' rel = 'noreferrer' className='alert-link'>Alexandra Alyabina</a></p>
+                <About title='React App'>
+                    <p className='about__link'>by <a href='https://github.com/citrusonya/' target='_blank' rel = 'noreferrer' className='alert-link'>citrusonya</a></p>
                 </About>
 				<Menu/>
                 <div className='contacts'>
