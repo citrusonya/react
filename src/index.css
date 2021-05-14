@@ -42,7 +42,6 @@ input[type=search] {
     -webkit-appearance: none;
     -moz-appearance: none;
     -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -178,6 +177,8 @@ h1 {
 a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
 
@@ -198,10 +199,12 @@ img {
 }
 
 .btn-primary {
+    background: -o-linear-gradient(135deg, #9830FF, #FC3355, #9830FF, #2740FF);
     background: linear-gradient(-45deg, #9830FF, #FC3355, #9830FF, #2740FF);
 	background-size: 300% 300%;
     border: transparent;
-    animation: 1s ease;
+    -webkit-animation: 1s ease;
+            animation: 1s ease;
 }
 
 .btn-primary:not(.btn-primary--send){
@@ -209,7 +212,8 @@ img {
 }
 
 .btn-primary:hover {
-    animation: animate_gradient 1.5s ease forwards;
+    -webkit-animation: animate_gradient 1.5s ease forwards;
+            animation: animate_gradient 1.5s ease forwards;
 }
 
 .form-control, .form-control:focus {
@@ -229,11 +233,18 @@ img {
    
 .form-control::-webkit-scrollbar-thumb {
     border-radius: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9830FF), to(#2740FF));
     background: linear-gradient(0deg, #9830FF, #2740FF);
 }
 
 .form-control:focus {
-    box-shadow: 0 0 13px 2px #2740FF;
+    -webkit-box-shadow: 0 0 13px 2px #2740FF;
+            box-shadow: 0 0 13px 2px #2740FF;
+}
+
+@-webkit-keyframes animate_gradient {
+	from { background-position: 0% 25%; }
+	to { background-position: 50% 25%; }
 }
 
 @keyframes animate_gradient {

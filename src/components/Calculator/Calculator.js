@@ -109,21 +109,19 @@ export default class Calculator extends React.Component {
   
 	render() {
 	  	return (
-			<div>
-				<div className="calculator">
-					<Display
-						formula = { this.state.formula.concat(this.state.output) }
-						output = { this.state.output }
-					/>
+			<div className="calculator">
+				<Display
+					formula = { this.state.formula.concat(this.state.output) }
+					output = { this.state.output }
+				/>
 		
-					<Buttons
-						onNumber = { this.onNumber }
-						onOperator = { this.onOperator }
-						onDecimal = { this.onDecimal }
-						onEqual = { this.onEqual }
-						onClear = { this.onClear }
-					/>
-				</div>
+				<Buttons
+					onNumber = { this.onNumber }
+					onOperator = { this.onOperator }
+					onDecimal = { this.onDecimal }
+					onEqual = { this.onEqual }
+					onClear = { this.onClear }
+				/>
 			</div>
 		)
 	}

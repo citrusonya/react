@@ -3,7 +3,7 @@ import CalculatorGo from '../components/Calculator/Calculator'
 
 const Calculator = () => {
 	return (
-		<div className='container'>
+		<div className='container mt-5'>
 			<CalculatorGo />
 		</div>
 	)

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Item({ work }) {
     return (
-        <Link to={`/${ work.name }`} className='col-sm'>
+        <Link to={`/${ work.name }`} className='col col-lg-2'>
             <img
                 src={ work.img }
                 alt={ work.title }

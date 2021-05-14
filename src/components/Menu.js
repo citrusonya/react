@@ -6,7 +6,7 @@ const Menu = () => {
 
 	return (
 		<div className='container'>
-			<div className='row'>
+			<div className='row justify-content-md-center'>
                 { works.map((work) => (
                     <Item key={ work.name } work={ work } />
                 )) }
