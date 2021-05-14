@@ -1,6 +1,6 @@
 import todo from './img/todo.gif';
 import calc from './img/calc.gif';
-import pleer from './img/pleer.gif';
+import player from './img/player.gif';
 import tictactoe from './img/tictaktoe.gif';
 
 export default [
@@ -21,8 +21,8 @@ export default [
     {
         id: '3',
         name: 'music',
-        title: 'Music pleer',
-        img: pleer,
+        title: 'Music player',
+        img: player,
         description: 'Chill'
     },
     {
