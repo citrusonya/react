@@ -1,4 +1,5 @@
 # React App
+![screenshot](https://github.com/citrusonya/react/blob/master/gif.gif)
 
 | [Demo](https://citrusonya.github.io/reactApp/index.html#/) |
 |:---------:|
