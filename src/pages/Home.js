@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from '../components/Menu'
 import About from '../components/About'
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 class Home extends React.Component {
     state = {
@@ -43,6 +44,7 @@ class Home extends React.Component {
                         )}
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

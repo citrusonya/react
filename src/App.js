@@ -1,9 +1,9 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home'
-import ToDoList from './pages/ToDoList'
-import Calculator from './pages/Calculator'
+import Home from './pages/Home';
+import ToDoList from './pages/ToDoList';
+import Calculator from './pages/Calculator';
 
 const App = () => {
 	return (

@@ -3,7 +3,8 @@
   margin: auto;
   max-width: 300px;
   overflow: hidden;
-  box-shadow: 0 0 20px 0 #1D40FF;
+  -webkit-box-shadow: 0 0 20px 0 #1D40FF;
+          box-shadow: 0 0 20px 0 #1D40FF;
 }
 
 .calculator__display {
@@ -24,9 +25,11 @@
 }
 
 .calculator__buttons {
+  display: -ms-grid;
   display: grid;
   background-color: #1F243A;
   grid-gap: 1px;
+  -ms-grid-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -39,8 +42,14 @@
   font-size: 25px;
   cursor: pointer;
   padding: 22px 0;
+  background: -o-linear-gradient(135deg, #9830FF, #FC3355, #9830FF, #2740FF);
   background: linear-gradient(-45deg, #9830FF, #FC3355, #9830FF, #2740FF);
   background-size: 400% 400%;
+}
+
+@-webkit-keyframes animate_gradient {
+	from { background-position: 0% 25%; }
+	to { background-position: 50% 25%; }
 }
 
 @keyframes animate_gradient {
@@ -50,15 +59,20 @@
 
 .calculator button:nth-child(12) {
   grid-column: -2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   grid-row: 2 / span 3;
 }
 
 .calculator button:nth-child(15) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
 }
 
 .calculator button:hover {
-  animation: animate_gradient 0.5s ease forwards;
+  -webkit-animation: animate_gradient 0.5s ease forwards;
+          animation: animate_gradient 0.5s ease forwards;
 }
 
 .calculator button:focus {

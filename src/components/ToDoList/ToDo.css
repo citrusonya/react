@@ -6,6 +6,8 @@
 }
 
 .todo__notodo {
+    background: -webkit-gradient(linear, right bottom, left top, from(#1D40FF), to(#1DF6FD));
+    background: -o-linear-gradient(bottom right, #1D40FF, #1DF6FD);
     background: linear-gradient(to top left, #1D40FF, #1DF6FD);
     padding: 29px 0;
     margin-top: 30px;
@@ -13,6 +15,8 @@
 .todo__item {
     padding: 5px 0;
     text-align: left;
+    background: -webkit-gradient(linear, right bottom, left top, from(#1D40FF), to(#1DF6FD));
+    background: -o-linear-gradient(bottom right, #1D40FF, #1DF6FD);
     background: linear-gradient(to top left, #1D40FF, #1DF6FD);
 }
 
@@ -21,11 +25,19 @@
 }
 
 .todo__item:nth-child(2n) {
+    background: -webkit-gradient(linear, right bottom, left top, from(#FC3355), to(#CE5BF6));
+    background: -o-linear-gradient(bottom right, #FC3355, #CE5BF6);
     background: linear-gradient(to top left, #FC3355, #CE5BF6);
 }
 
 .todo__item:nth-child(3n) {
+    background: -webkit-gradient(linear, right bottom, left top, from(#9830FF), to(#2740FF));
+    background: -o-linear-gradient(bottom right, #9830FF, #2740FF);
     background: linear-gradient(to top left, #9830FF, #2740FF);
+}
+
+.todo__item:last-child{
+    margin-bottom: 30px;
 }
 
 .todo__item .done {
@@ -36,6 +48,7 @@
     max-width: 400px;
     line-height: 1.5;
     padding: 20px 0 20px 50px;
+    margin: 0;
 }
 
 .todo__text {
@@ -52,7 +65,8 @@
 }
 
 .todo__text:focus{
-    box-shadow: 0 0 13px 2px #2740FF;
+    -webkit-box-shadow: 0 0 13px 2px #2740FF;
+            box-shadow: 0 0 13px 2px #2740FF;
 }
 
 .todo__text::-webkit-scrollbar {
@@ -65,6 +79,7 @@
    
 .todo__text::-webkit-scrollbar-thumb {
     border-radius: 10px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9830FF), to(#2740FF));
     background: linear-gradient(0deg, #9830FF, #2740FF);
 }
 
@@ -75,8 +90,14 @@
     border: none;
     border-radius: 10px;
     margin: auto;
+    background: -o-linear-gradient(135deg, #9830FF, #FC3355, #9830FF, #2740FF);
     background: linear-gradient(-45deg, #9830FF, #FC3355, #9830FF, #2740FF);
 	background-size: 300% 300%;
+}
+
+@-webkit-keyframes animate_gradient {
+	from { background-position: 0% 25%; }
+	to { background-position: 50% 25%; }
 }
 
 @keyframes animate_gradient {
@@ -85,7 +106,8 @@
 }
 
 .todo__button_create:hover {
-    animation: animate_gradient 1s ease forwards;
+    -webkit-animation: animate_gradient 1s ease forwards;
+            animation: animate_gradient 1s ease forwards;
 }
 
 .todo__button_remove {
@@ -100,6 +122,8 @@
     color: white;
     font-size: 30px;
     line-height: 20px;
+    -webkit-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
 }
 
@@ -112,6 +136,8 @@
     border-radius: 50%;
     top: calc(50% - 8px);
     left: 20px;
+    -webkit-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
     transition: all 0.15s linear;
     cursor: pointer;
 }
@@ -127,5 +153,6 @@
     border-color: transparent;
 }
 .form-check-input:focus {
-    box-shadow: 0 0 0 .25rem transparent;
+    -webkit-box-shadow: 0 0 0 .25rem transparent;
+            box-shadow: 0 0 0 .25rem transparent;
 }
