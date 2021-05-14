@@ -63,7 +63,7 @@ class ContactForm extends Component {
                 </div>
                 <div className='mb-3'>
                     <textarea className='form-control'
-                        rows='10'
+                        rows='5'
                         value={ offer }
                         onChange={ this.offerChangeHandler }
                         placeholder='Some text'
