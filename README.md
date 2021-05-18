@@ -1,16 +1,24 @@
-# SPA
+# React App
+![screenshot](https://github.com/citrusonya/react/blob/master/gif.gif)
 
-| [Demo]() |
+| [Demo](https://citrusonya.github.io/reactApp/index.html#/) |
 |:---------:|
 
-:zzz: To-Do List
+:feet: To-Do List 
 
-:1234: Calculator
+Suitable for everyone, even those with paws.
 
-:musical_note: Music Player
+:zzz: Calculator
 
-:negative_squared_cross_mark: Tic-Tac-Toe
+For sloths like me who are too lazy to add 2 + 2 in their minds.
 
-## Note
+## Getting Started
+git clone https://github.com/citrusonya/react.git
 
-Still in development Music Player and Tic-Tac-Toe.
+## Scripts
+Make sure you have `create-react-app` installed.
+
+### Run App in Hot Reloading mode
+`npm start`
+### Create production build
+`npm run build`
