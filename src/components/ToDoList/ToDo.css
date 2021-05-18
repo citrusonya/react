@@ -47,7 +47,7 @@
 .todo__item p {
     max-width: 400px;
     line-height: 1.5;
-    padding: 24px 0 24px 50px;
+    padding: 24px 5px 24px 50px;
     margin: 0;
 }
 
@@ -155,4 +155,24 @@
 .form-check-input:focus {
     -webkit-box-shadow: 0 0 0 .25rem transparent;
             box-shadow: 0 0 0 .25rem transparent;
+}
+
+@media only screen and (max-width : 600px)  {
+    .todo__text, .todo__notodo, .todo__item {
+        width: 300px;
+    }
+
+    .todo__button_create {
+        padding: 15px 82px;
+    }
+}
+
+@media only screen and (max-width : 360px)  {
+    .todo__text, .todo__notodo, .todo__item {
+        width: 225px;
+    }
+
+    .todo__button_create {
+        padding: 15px 47px;
+    }
 }
