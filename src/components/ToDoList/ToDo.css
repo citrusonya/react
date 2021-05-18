@@ -157,13 +157,24 @@
             box-shadow: 0 0 0 .25rem transparent;
 }
 
+@media only screen and (max-width : 800px)  {
+    .todo__text, .todo__notodo, .todo__item {
+        width: 300px;
+    }
+
+    .todo__button_create {
+        padding: 15px 82px;
+    }
+}
+
+
 @media only screen and (max-width : 600px)  {
     .todo__text, .todo__notodo, .todo__item {
         width: 275px;
     }
 
     .todo__button_create {
-        padding: 15px 67px;
+        padding: 15px 70px;
     }
 }
 
